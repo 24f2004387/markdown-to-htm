@@ -1,8 +1,13 @@
-document.getElementById('convert-btn').addEventListener('click', function() {
-    const markdownInput = document.getElementById('markdown-input').value;
-    const htmlOutput = marked(markdownInput);
-    document.getElementById('markdown-output').innerHTML = htmlOutput;
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightElement(block);
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('#markdown-input');
+    const output = document.querySelector('#markdown-output');
+
+    input.addEventListener('input', () => {
+        const markdownText = input.value;
+        output.innerHTML = marked(markdownText);
+        const codeBlocks = output.querySelectorAll('pre code');
+        codeBlocks.forEach((block) => {
+            hljs.highlightElement(block);
+        });
     });
 });

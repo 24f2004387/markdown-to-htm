@@ -1,41 +1,38 @@
+```markdown
 # Markdown to HTML Converter
 
 ## Summary
-This static web application allows users to convert Markdown text to HTML instantly using the marked.js library. It's designed to be simple, fast, and efficient, suitable for developers, writers, and anyone needing quick conversions.
+This project is a static web application that allows users to convert Markdown text to HTML. It features a dual-column layout with a live preview, utilizing `marked.js` for Markdown parsing and `highlight.js` for syntax highlighting in code blocks.
 
 ## Setup (Local)
-To set up this application locally, follow these steps:
-
+To set up this project locally, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/markdown-to-html-converter.git
+   git clone https://github.com/24f2004387/markdown-to-htm.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd markdown-to-html-converter
-   ```
-3. Open the `index.html` file in your browser to start using the application.
+2. Open the `index.html` file in your web browser.
 
 ## Usage
 To use the application:
-
-1. Enter your Markdown text into the text area labeled 'Markdown Input'.
-2. Click the 'Convert' button.
-3. The converted HTML will automatically appear in the `#markdown-output` element.
+1. Enter Markdown text into the left-hand textarea.
+2. The right-hand panel will automatically display the converted HTML.
+3. Code blocks within the Markdown text will be highlighted.
 
 ## Code Explanation
-- **index.html**: Contains the user interface with text areas for input and output.
-- **style.css**: Provides basic styling for the application.
-- **script.js**: Includes the logic to convert Markdown to HTML using marked.js. It listens for button clicks and updates the HTML content of `document.querySelector('#markdown-output')` with the conversion results.
+- **HTML**: Contains a simple layout with two columns for input and preview.
+- **JavaScript**: Uses `marked.js` to convert Markdown to HTML and `highlight.js` to highlight code.
+- **CSS**: Provides basic styling for the layout and responsive design.
 
 ## Deployment (GitHub Pages)
-To deploy this application on GitHub Pages:
+This app is deployed on GitHub Pages. You can view it live here: [Markdown to HTML Live Demo](https://24f2004387.github.io/markdown-to-htm/).
 
-1. Navigate to your GitHub repository.
-2. Go to the 'Settings' tab.
-3. Scroll down to the 'Pages' section.
-4. From the 'Source' dropdown, select the branch you want to deploy and the folder (`/ (root)`).
-5. Click 'Save', and GitHub will automatically deploy the app. The URL will be displayed above the source selection.
+To deploy your own version:
+1. Fork the repository.
+2. Navigate to your repository settings.
+3. Under the "Pages" section, set the source to the `main` branch and save.
+4. Your version will be live at `https://<your-github-username>.github.io/markdown-to-htm/`.
 
 ## License (MIT)
-This project is open-sourced under the MIT License. See the LICENSE file for more details. This permits anyone to modify, distribute, and use the application as long as they credit the original author and source.
+This project is open-sourced under the MIT License. See the [LICENSE](https://github.com/24f2004387/markdown-to-htm/blob/main/LICENSE) file for more details.
+```
+This README provides all necessary instructions and descriptions for users to effectively understand and utilize the Markdown to HTML converter web application.
